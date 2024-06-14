@@ -1,0 +1,71 @@
+/* Styles specific to tablet screen */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    body {
+        background-color: #e0e0e0;
+    }
+
+    header {
+        background-color: #fff;
+        padding: 15px;
+        text-align: center;
+        color: white;
+    }
+    header img {
+        width: 100%;
+        height: auto;
+        filter: brightness(50%);
+    }
+    
+    header .header-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    header .header-content h1 {
+        font-size: 3em;
+        margin: 0;
+    }
+    
+    header .header-content p {
+        font-size: 1.5em;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        list-style: none;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #333;
+    }
+
+    section {
+        padding: 20px;
+        background: white;
+        margin: 20px 0;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    
+
+    .about-container, .experience-container, .education-container, .activity-container, .skills-container, .projects-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .personal-info ul {
+        display: none; /* Initially hide personal info */
+    }
+    
+}
